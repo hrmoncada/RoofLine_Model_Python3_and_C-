@@ -1,0 +1,1097 @@
+ 
+ ************************************** 
+                 EXESS  
+        EXtreme-scale Electronic   
+           Structure Software    
+              DOI/x.y.z 
+ 
+       High performance, accelerated, 
+       scalable, quantum chemistry 
+ ************************************** 
+ 
+    August 2021 Development Version  
+      Enjoy the power of GPUs! 
+ 
+ EXESS is made possible thanks to the  
+ multiple collaborators and contributors  
+ that have done any sort of work with the 
+ EXESS code in all of its versions. 
+ They are listed here in alphabetical order: 
+ 
+ 
+ Melisa Alkan, Giuseppe M. J. Barca, 
+ Colleen Bertoni, Jorge Luis Galvez Vallejo, 
+ Fazeleh Kazemian, David Poole, 
+ Christopher Seidl, Ryan Stocks 
+ 
+ 
+ Who are supported by their respective 
+ institutions: 
+ 
+ Australian National University, 
+ Iowa State University 
+ 
+ 
+ EXESS Software Management Team 
+ 
+ Giuseppe M. J. Barca (Lead) 
+ 
+ 
+ Calculation started at Fri Nov 12 22:01:54 2021
+
+ 
+ Performing an RHF
+ 
+ Title Title
+ 
+ Basis set is STO-3G
+//------------------------------------------//
+//--            xyz coordinates           --//
+//------------------------------------------//
+450
+ 
+O     -4.3997     1.0764     7.7009
+H     -3.9597     0.2664     7.3109
+H     -4.4297     0.9964     8.7009
+O     -6.2497     3.4564     1.8409
+H     -6.8697     3.8864     1.1809
+H     -5.3897     3.9664     1.8709
+O     -1.7197     3.2264     6.2709
+H     -1.3297     2.5664     5.6309
+H     -2.0797     4.0064     5.7709
+O     -17.8097     2.7464     6.2009
+H     -18.6297     2.3364     5.7909
+H     -18.0697     3.2964     6.9909
+O     1.2103     5.6564     -1.3291
+H     1.9103     6.1964     -1.7891
+H     1.6303     4.9264     -0.7991
+O     -14.9397     -1.9436     -5.4991
+H     -14.7197     -2.8136     -5.0491
+H     -14.4897     -1.1936     -5.0091
+O     -5.3997     9.8464     -2.7091
+H     -5.6997     10.6464     -3.2191
+H     -5.8397     9.8364     -1.8091
+O     -6.3497     5.5264     -6.1091
+H     -5.8297     5.9864     -5.3891
+H     -7.2297     5.2264     -5.7391
+O     3.9303     -10.7036     6.0909
+H     3.9803     -11.6936     5.9509
+H     2.9703     -10.4136     6.0409
+O     -12.6897     2.4064     7.3009
+H     -12.9297     1.4664     7.0509
+H     -13.3597     3.0364     6.9109
+O     -3.0597     -0.6236     -13.9091
+H     -3.0897     0.3164     -13.5591
+H     -2.1297     -0.9736     -13.8391
+O     3.4003     -5.5436     -9.3391
+H     3.5103     -6.4936     -9.6391
+H     2.4803     -5.2236     -9.5691
+O     0.7003     -4.9236     9.5209
+H     0.5203     -4.2236     10.2209
+H     0.0003     -5.6236     9.5709
+O     9.9703     -11.3236     -2.6491
+H     10.9303     -11.3836     -2.9291
+H     9.4503     -12.0436     -3.1091
+O     -5.1397     -6.6836     0.3509
+H     -5.4797     -6.6136     1.2909
+H     -5.5997     -6.0236     -0.2291
+O     -1.5197     -3.9536     -4.9791
+H     -2.4897     -4.1636     -4.9391
+H     -1.0197     -4.5436     -4.3391
+O     -0.4697     20.4664     1.7309
+H     0.4403     20.0464     1.7409
+H     -1.0297     20.0664     2.4609
+O     10.3303     7.3064     1.4709
+H     11.0103     6.5964     1.2509
+H     10.6503     7.8464     2.2509
+O     3.4903     -5.2836     3.6309
+H     3.3103     -4.3036     3.7009
+H     3.8903     -5.6136     4.4809
+O     4.9303     7.9664     -10.8091
+H     4.1003     7.5564     -11.1991
+H     5.3503     8.5664     -11.4991
+O     1.5603     12.7864     4.2909
+H     1.8003     12.9764     5.2409
+H     0.5903     12.5764     4.2309
+O     -0.7497     -9.9036     1.7509
+H     -0.4997     -10.0936     0.8009
+H     -1.7097     -10.1636     1.9009
+O     12.8603     -7.0936     -5.5091
+H     12.3303     -6.2436     -5.5591
+H     12.5503     -7.7136     -6.2291
+O     -0.2497     -8.8436     6.7809
+H     -0.9397     -9.1536     7.4209
+H     -0.6897     -8.4036     6.0009
+O     0.7903     -10.0336     -6.9491
+H     0.5103     -10.9336     -7.2891
+H     0.2103     -9.7836     -6.1691
+O     9.0703     -9.2336     0.4809
+H     9.1503     -10.1736     0.8209
+H     9.8903     -8.7136     0.7309
+O     9.0403     4.9264     3.2409
+H     8.0803     5.1164     3.4709
+H     9.3403     5.5664     2.5309
+O     -12.9897     -0.7636     10.8209
+H     -12.0897     -0.5336     10.4609
+H     -13.3497     0.0064     11.3509
+O     -0.9297     -0.7436     2.7809
+H     -1.9097     -0.6436     2.6009
+H     -0.6297     -1.6636     2.5409
+O     -0.4597     -5.7136     -3.4991
+H     -0.2197     -5.4636     -2.5691
+H     -1.1597     -6.4236     -3.4891
+O     -1.5297     11.4864     -3.2291
+H     -1.7097     11.5664     -4.2091
+H     -0.5497     11.3564     -3.0791
+O     -2.2797     -9.6236     8.5209
+H     -2.7197     -8.8236     8.1109
+H     -2.0097     -9.4036     9.4609
+O     -4.0097     -7.5636     -16.0691
+H     -4.6897     -7.5036     -16.7991
+H     -3.2497     -6.9536     -16.2791
+O     11.1303     -4.7036     -2.9391
+H     11.1703     -5.6036     -2.5091
+H     11.5203     -4.7536     -3.8591
+O     8.3003     -0.5336     13.9109
+H     9.1803     -0.1236     14.1709
+H     7.9903     -0.1436     13.0509
+O     -6.7097     2.4364     7.7909
+H     -5.7797     2.1164     7.5909
+H     -6.8797     3.2964     7.3109
+O     11.2503     -7.8236     0.9909
+H     11.7903     -7.0736     1.3909
+H     11.6803     -8.1236     0.1409
+O     -14.2497     -0.4336     6.0709
+H     -14.4197     -1.1936     6.7009
+H     -13.8197     -0.7836     5.2409
+O     7.8503     -2.0236     -8.1591
+H     8.2203     -1.3336     -8.7791
+H     6.8703     -1.8836     -8.0491
+O     17.4603     -7.3836     2.1609
+H     17.6703     -7.2036     1.2009
+H     18.2203     -7.0636     2.7309
+O     0.7703     0.1964     -12.1291
+H     1.3103     -0.5136     -12.5891
+H     1.3903     0.7764     -11.5991
+O     3.7903     11.5964     -2.2591
+H     4.7503     11.6864     -2.0091
+H     3.6603     10.7264     -2.7491
+O     2.5703     -4.8436     -3.7391
+H     2.0403     -5.6336     -4.0591
+H     2.0503     -4.3636     -3.0391
+O     -6.8997     -6.4736     -5.9191
+H     -7.5697     -5.9136     -6.4191
+H     -6.7197     -6.0536     -5.0291
+O     -9.1097     -0.9436     -10.3591
+H     -8.7097     -0.3136     -11.0391
+H     -9.9597     -0.5536     -10.0091
+O     8.6803     3.3764     7.6509
+H     8.4103     2.6864     6.9809
+H     9.5203     3.0864     8.1109
+O     11.1303     9.0464     3.8509
+H     10.2203     9.0564     3.4409
+H     11.0503     9.1564     4.8409
+O     3.4503     -0.2936     -14.4491
+H     2.8403     -1.0936     -14.4191
+H     4.0703     -0.3336     -13.6691
+O     -20.2397     0.8564     2.7309
+H     -19.7397     0.9264     1.8709
+H     -20.9097     0.1164     2.6609
+O     -0.1197     -1.6336     -14.3291
+H     -0.2697     -2.5336     -14.7391
+H     0.7703     -1.6136     -13.8591
+O     -9.8997     -8.7436     -8.1891
+H     -9.9497     -9.6036     -8.7091
+H     -8.9897     -8.3336     -8.3191
+O     -2.7597     -2.8036     7.7509
+H     -2.1997     -2.5436     6.9709
+H     -3.4697     -3.4536     7.4609
+O     0.2903     -2.5436     11.2509
+H     -0.6897     -2.6936     11.3009
+H     0.4903     -1.8136     10.6009
+O     -1.3097     6.3764     7.7009
+H     -0.9797     7.1964     8.1809
+H     -1.4097     5.6264     8.3509
+O     10.0103     1.4364     -8.0391
+H     9.7103     1.2364     -7.1091
+H     10.5303     2.2864     -8.0491
+O     -0.3197     -2.8336     16.7109
+H     0.6503     -2.7236     16.4809
+H     -0.4097     -3.5336     17.4209
+O     -3.2697     -3.1136     -16.2591
+H     -3.8397     -3.4036     -15.4891
+H     -3.2397     -2.1136     -16.2991
+O     7.7003     -3.4536     -3.0991
+H     8.2703     -3.7936     -2.3491
+H     6.9003     -4.0336     -3.1991
+O     5.4903     1.0064     10.3309
+H     4.7603     0.9064     11.0009
+H     6.3303     0.6064     10.7009
+O     5.9703     5.9864     0.8309
+H     6.9003     5.7264     0.5809
+H     5.9603     6.9464     1.1109
+O     0.3403     9.9464     -9.9091
+H     1.2703     10.3064     -9.9691
+H     0.1203     9.4664     -10.7591
+O     -0.2097     4.1264     13.0209
+H     0.6003     3.5364     13.0309
+H     0.0703     5.0864     13.0509
+O     9.8703     -2.4636     12.0009
+H     10.3003     -2.4036     11.1009
+H     9.9403     -1.5736     12.4609
+O     -5.0797     -12.4936     4.4209
+H     -5.4497     -12.9836     5.2109
+H     -5.8097     -11.9736     3.9709
+O     -12.8397     -0.0536     3.4209
+H     -12.3797     0.1364     4.2809
+H     -13.2497     0.7864     3.0709
+O     -6.5997     -8.2136     -8.1691
+H     -5.6797     -8.6136     -8.1391
+H     -6.9297     -8.0836     -7.2391
+O     7.6503     -6.6236     8.1009
+H     7.7803     -7.2236     8.8909
+H     6.8603     -6.0336     8.2609
+O     -1.5697     -6.2436     10.2009
+H     -2.0097     -6.8536     10.8609
+H     -2.2697     -5.7736     9.6609
+O     4.7403     -14.1436     0.2609
+H     3.9903     -14.7436     0.5509
+H     5.1603     -13.7336     1.0709
+O     0.5503     -13.1336     -4.3291
+H     0.1003     -14.0136     -4.1791
+H     0.0103     -12.5836     -4.9691
+O     -0.0597     6.5064     -13.5791
+H     -0.1097     7.0064     -14.4491
+H     -0.7997     5.8364     -13.5391
+O     3.0503     -12.8136     3.1909
+H     2.1103     -12.4836     3.2009
+H     3.6503     -12.1336     3.6109
+O     0.3803     -3.0436     2.5109
+H     0.8003     -2.5536     3.2709
+H     1.0703     -3.2336     1.8109
+O     3.9203     4.2964     -16.3991
+H     4.3903     3.4964     -16.7691
+H     3.0903     3.9964     -15.9191
+O     -4.2497     8.5564     10.1709
+H     -4.2297     9.3664     10.7509
+H     -5.1797     8.4264     9.8109
+O     -7.5597     -7.5136     11.2209
+H     -6.7097     -7.9336     10.9009
+H     -7.4597     -6.5236     11.2209
+O     13.4403     3.6564     -4.0691
+H     13.5703     4.6464     -3.9691
+H     14.2403     3.2664     -4.5191
+O     -6.7997     10.8664     7.3609
+H     -6.1897     10.0764     7.3809
+H     -7.7097     10.5964     7.6709
+O     3.4003     9.4264     -8.8591
+H     3.0403     8.8264     -8.1391
+H     4.2203     9.0164     -9.2591
+O     -2.4097     8.8064     -2.3291
+H     -3.3097     9.2264     -2.2891
+H     -1.7997     9.3864     -2.8691
+O     -11.5797     -5.7036     7.5009
+H     -11.2597     -4.7936     7.2209
+H     -10.8897     -6.1236     8.0809
+O     -2.8597     -0.8336     13.1709
+H     -3.7697     -0.4336     13.2709
+H     -2.6697     -0.9736     12.2009
+O     3.0103     8.2264     2.2909
+H     3.9103     8.1564     1.8709
+H     2.5803     9.0864     2.0109
+O     -4.0897     -3.4636     1.6509
+H     -4.3797     -4.4036     1.4609
+H     -3.5397     -3.4536     2.4909
+O     -2.7097     3.2164     -2.7391
+H     -3.2597     4.0364     -2.5591
+H     -1.7497     3.4764     -2.8391
+O     1.1403     11.6964     -2.9991
+H     0.7303     12.1864     -2.2291
+H     2.1403     11.6964     -2.8891
+O     -1.4897     1.7864     10.1109
+H     -2.2697     1.1564     10.1209
+H     -0.9897     1.7064     10.9709
+O     0.9803     2.3364     -8.7991
+H     0.4903     3.1764     -9.0491
+H     0.4703     1.5464     -9.1291
+O     -8.5697     -0.2836     -4.2091
+H     -8.0797     0.5264     -4.5391
+H     -9.5297     -0.2236     -4.4891
+O     -0.4297     -5.2736     -0.7891
+H     -0.3397     -4.3236     -1.0891
+H     -1.2997     -5.3936     -0.3191
+O     -4.5697     -2.0636     -10.7791
+H     -4.2697     -1.3336     -10.1591
+H     -3.7797     -2.6336     -11.0091
+O     9.5503     4.6664     -5.0791
+H     8.5603     4.5564     -5.1991
+H     9.9803     3.7664     -5.0391
+O     2.2603     -6.6136     10.9509
+H     1.7203     -5.8736     10.5409
+H     2.3103     -7.3836     10.3209
+O     9.2303     -5.2136     10.9509
+H     9.5103     -4.4336     11.5109
+H     8.3903     -5.6136     11.3309
+O     4.1703     1.0164     5.9209
+H     4.5403     0.7664     5.0309
+H     4.1403     2.0064     6.0009
+O     7.0703     -6.0936     -6.8691
+H     6.1203     -5.9136     -6.6091
+H     7.2603     -5.6836     -7.7691
+O     -4.1297     3.9564     9.0509
+H     -3.7997     3.3664     8.3209
+H     -3.3597     4.3264     9.5609
+O     -5.0297     -3.3736     -5.1991
+H     -4.6997     -4.0736     -5.8391
+H     -5.9597     -3.1236     -5.4391
+O     -1.9497     -5.8236     -16.6591
+H     -2.5397     -5.0236     -16.7791
+H     -1.0497     -5.6336     -17.0591
+O     6.7803     -9.6336     -8.4191
+H     7.6803     -10.0436     -8.3091
+H     6.4403     -9.3236     -7.5291
+O     -13.3697     -5.0836     5.6109
+H     -13.1097     -5.4936     4.7409
+H     -12.8497     -5.5036     6.3509
+O     -2.2097     9.4464     6.4109
+H     -1.6097     8.7764     5.9809
+H     -1.7697     9.8064     7.2409
+O     1.7103     -7.9236     8.5309
+H     1.1003     -8.0436     7.7509
+H     2.5503     -7.4636     8.2409
+O     12.9403     -7.3636     -1.8991
+H     13.6303     -7.1336     -2.5791
+H     12.2103     -7.8836     -2.3391
+O     7.0303     8.9764     -1.3691
+H     7.7403     8.3064     -1.1591
+H     6.7503     8.8764     -2.3191
+O     -6.2797     5.3064     -10.2291
+H     -6.8897     4.6564     -9.7691
+H     -6.0097     6.0164     -9.5791
+O     -14.5397     0.3564     0.1909
+H     -13.8197     0.7764     -0.3591
+H     -14.5897     0.8164     1.0809
+O     1.2703     3.3664     2.9209
+H     1.0403     3.9364     2.1309
+H     0.4703     2.8464     3.2109
+O     -0.0597     2.4464     -5.5891
+H     0.0803     2.0264     -4.6891
+H     0.7703     2.9264     -5.8691
+O     -11.4197     -2.8536     5.4209
+H     -12.1397     -3.3936     4.9809
+H     -11.6997     -2.6236     6.3509
+O     5.6703     -0.5036     -11.5091
+H     6.6303     -0.4736     -11.7991
+H     5.6203     -0.4036     -10.5191
+O     -8.8697     7.2664     7.6009
+H     -9.4697     6.4764     7.5709
+H     -8.6297     7.5464     6.6709
+O     12.0403     -0.7736     0.2709
+H     11.5803     -1.6436     0.0909
+H     13.0003     -0.9436     0.4809
+O     -9.1297     -6.4136     8.5809
+H     -9.1197     -5.7436     9.3309
+H     -8.3297     -7.0036     8.6409
+O     1.7103     10.3764     1.8909
+H     1.5103     11.2164     2.3809
+H     1.3803     10.4564     0.9409
+O     -7.7497     -3.1036     -5.7991
+H     -8.4297     -3.5036     -5.1791
+H     -7.7797     -2.1036     -5.7291
+O     -5.6597     -1.7136     6.5309
+H     -6.4397     -1.1336     6.7809
+H     -5.4597     -1.5936     5.5609
+O     6.0503     12.3864     1.6309
+H     6.0003     12.5064     0.6409
+H     5.4003     13.0064     2.0809
+O     -9.6197     -7.3236     0.4609
+H     -10.4497     -6.8836     0.7909
+H     -8.8197     -6.8836     0.8809
+O     -0.5997     5.4864     3.1109
+H     0.3703     5.6664     3.2309
+H     -0.8397     5.5364     2.1409
+O     -6.6497     -4.3736     4.1209
+H     -6.0997     -4.3536     4.9509
+H     -6.7997     -3.4336     3.8009
+O     8.7003     6.7664     -0.9291
+H     9.2603     6.8464     -0.1091
+H     9.2903     6.7864     -1.7391
+O     -9.0597     -5.8136     3.2309
+H     -9.0597     -6.4236     4.0309
+H     -8.2297     -5.2436     3.2509
+O     2.9503     -1.6036     -10.7291
+H     2.8103     -1.6536     -9.7491
+H     3.7903     -1.1036     -10.9291
+O     0.4203     -11.7336     3.2309
+H     0.0303     -10.9636     2.7309
+H     -0.1897     -12.5236     3.1709
+O     -1.7497     17.9964     -4.2691
+H     -2.6497     17.5664     -4.4091
+H     -1.7797     18.9364     -4.6091
+O     0.6603     0.2664     11.8609
+H     1.3703     0.8364     12.2909
+H     0.2203     -0.2936     12.5509
+O     4.3103     7.3164     -7.1791
+H     4.1703     6.3764     -6.8691
+H     5.2403     7.6164     -6.9391
+O     -8.8197     -1.6036     0.5509
+H     -9.2097     -0.6836     0.4309
+H     -8.4397     -1.9136     -0.3091
+O     1.4403     -8.1136     -9.0691
+H     2.3503     -8.3136     -9.4491
+H     1.0903     -8.9336     -8.6091
+O     -3.7797     -5.1936     -3.6891
+H     -4.4097     -4.5536     -4.1191
+H     -3.5897     -4.8936     -2.7591
+O     -8.6997     4.5364     -4.8291
+H     -9.2797     3.7764     -4.5491
+H     -8.9297     5.3464     -4.2991
+O     -1.0097     11.5464     3.6209
+H     -1.5297     11.9864     4.3609
+H     -0.6297     10.6864     3.9509
+O     13.4603     1.5164     0.2009
+H     12.8203     0.7864     -0.0291
+H     13.5703     1.5564     1.2009
+O     7.2703     -7.7636     2.9309
+H     7.4503     -8.4836     2.2709
+H     6.7003     -8.1236     3.6709
+O     -6.7897     -0.1736     -8.6691
+H     -7.0497     -1.1236     -8.8791
+H     -5.8797     0.0064     -9.0391
+O     0.3903     12.0364     7.4009
+H     -0.0697     11.9564     8.2909
+H     1.3103     11.6664     7.4709
+O     -10.2397     -8.6836     -5.5291
+H     -9.8297     -9.5636     -5.2891
+H     -10.2397     -8.5736     -6.5191
+O     12.9203     1.1864     6.3309
+H     13.7403     0.6164     6.3409
+H     13.0703     1.9764     5.7409
+O     0.4403     -5.9736     -10.6191
+H     1.0203     -6.7236     -10.2891
+H     -0.4997     -6.1236     -10.3191
+O     -4.0097     0.4664     -9.2291
+H     -3.8097     1.4464     -9.1991
+H     -3.2597     -0.0336     -8.7891
+O     -9.9697     -9.6436     -1.0691
+H     -10.0097     -8.7736     -0.5791
+H     -10.8897     -9.9936     -1.1991
+O     -2.4097     10.4064     -13.3891
+H     -2.5097     10.0964     -14.3391
+H     -1.7797     9.7964     -12.9091
+O     7.5603     11.8164     3.9509
+H     7.6703     12.5664     4.6009
+H     7.0603     12.1464     3.1509
+O     2.9703     12.1064     -10.1191
+H     2.4503     12.8964     -9.7791
+H     3.3303     11.5864     -9.3391
+O     8.0203     -12.1036     -6.5291
+H     7.6303     -12.0136     -5.6091
+H     8.1703     -13.0636     -6.7291
+O     3.1903     9.0564     -3.4091
+H     4.1003     8.9164     -3.7991
+H     2.5003     8.7264     -4.0491
+O     7.3103     -12.4236     -3.5891
+H     6.5903     -11.7636     -3.4091
+H     6.9603     -13.3536     -3.4291
+O     -11.0697     3.1364     9.8309
+H     -11.7697     2.6864     9.2809
+H     -10.7297     3.9464     9.3509
+O     4.0703     -0.0936     12.4509
+H     3.9103     0.2064     13.3909
+H     3.6903     -1.0036     12.3109
+//------------------------------------------//
+ 
+ SCF SET UP PARAMETERS 
+-------------------------------------------------- 
+ Convergence threshold is: 1e-05
+ Dynamic threshold set to 10e-8
+ Density screening threshold set to 1e-10
+ Max iterations are: 100
+ DIIS size is: 8
+ Overlap eigenvalue threshold is: 1e-06
+ Running using a batch size of 2560
+ Difference in Fock matrices is set to false
+-------------------------------------------------- 
+==PROF== Connected to process 366324 (/gpfs/alpine/chm135/scratch/shirley/EXESS-dev/exess-summit)
+==PROF== Connected to process 366323 (/gpfs/alpine/chm135/scratch/shirley/EXESS-dev/exess-summit)
+ 
+ Number of atoms 450
+ Number of basis functions 1050
+ 
+ Start one electron integrals! 
+ Done with one electron integrals! 
+ 
+ Time for one electron integrals (s) = 0.08357
+ 
+ Iter       Energy          Ediff            Fock Time        DIIS Time 
+****************************************************************************
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 1        -11292.91774        11292.91774        2.21        0.897
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 2        -11227.93175        64.98598788        1.88        0.896
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 3        -11228.25264        0.3208917586        1.86        0.899
+ Incrementing dynamic threshold to 10e-9
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 4        -11210.08491        18.16772918        2.46        0.903
+ Incrementing dynamic threshold to 10e-10
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 5        -11249.94004        39.85512504        3.3        0.902
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 6        -11247.0276        2.912436755        3.29        0.903
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 7        -11246.53097        0.4966348013        3.28        0.908
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 8        -11245.48221        1.048760137        3.29        0.933
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 9        -11244.56626        0.9159480347        3.3        0.921
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 10        -11244.6225        0.0562365346        3.3        0.911
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 11        -11244.62794        0.005441405272        3.29        0.915
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 12        -11244.62849        0.0005544243904        3.29        0.913
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 13        -11244.62859        9.340639372e-05        3.28        0.919
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 14        -11244.6286        1.234556839e-05        3.28        0.917
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+==PROF== Profiling "GPU_kernel_1_1_0_0": 0%....50%....100% - 1 pass
+ 15        -11244.6286        9.376963135e-07        3.3        0.912
+****************************************************************************
+ Energy converged in 15 iterations
+ 
+ Final energy is: -11244.6285989231
+ 
+ Fock time = ERI + Digestion time 
+ Total Fock time (s) = 44.62
+ Total DIIS time (s) = 13.65
+ 
+ Total SCF time (s) = 58.39
+ 
+ Calculation finalized at Fri Nov 12 22:02:57 2021
+
+ Total processing time 63.23
+ 
+ Kamehameha!! 
+ 
+*********************************************
+*          Thanks for using EXESS!          *
+*********************************************
+ 
+ 
+ Commit No. for current version 
+ a56c23ecdc46041b4f5456c079176305e34040c7    
+ 
+==PROF== Disconnected from process 366323
+==PROF== Disconnected from process 366324
+[366323] exess-summit@127.0.0.1
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 116, Device 0, 57 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum      Maximum          Average         
+    --------------------------------------------------- ----------- ------------ ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        0.000000     65199849.000000  53407600.070175 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        0.000000     273788783.000000 224288525.192982
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        22330.000000 90174884.000000  73891271.666667 
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 145, Device 0, 26 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum          Maximum          Average         
+    --------------------------------------------------- ----------- ---------------- ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        47001147.000000  70088899.000000  59549703.038462 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        197877773.000000 293184003.000000 249626617.192308
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        65196635.000000  96580026.000000  82236660.192308 
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 148, Device 0, 38 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum      Maximum          Average         
+    --------------------------------------------------- ----------- ------------ ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        0.000000     66383836.000000  42700311.526316 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        0.000000     277792922.000000 179105863.157895
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        28897.000000 91489745.000000  59016978.763158 
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 150, Device 0, 11 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum          Maximum          Average         
+    --------------------------------------------------- ----------- ---------------- ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        72643935.000000  72643935.000000  72643935.000000 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        304257535.000000 304257535.000000 304257535.000000
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        100210864.000000 100210864.000000 100210864.000000
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 152, Device 0, 23 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum        Maximum          Average         
+    --------------------------------------------------- ----------- -------------- ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        1975087.000000 56195913.000000  30109076.478261 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        8597075.000000 235184617.000000 126165421.869565
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        2894376.000000 77457366.000000  41582546.000000 
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 185, Device 0, 15 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum          Maximum          Average         
+    --------------------------------------------------- ----------- ---------------- ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        63878939.000000  89497077.000000  87789201.133333 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        266801415.000000 374207029.000000 367046654.733333
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        87872030.000000  123241244.000000 120883296.400000
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 190, Device 0, 15 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum          Maximum          Average         
+    --------------------------------------------------- ----------- ---------------- ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        65544842.000000  91822071.000000  90058873.000000 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        274031740.000000 384357581.000000 376954419.933333
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        90253498.000000  126583290.000000 124145470.533333
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 212, Device 0, 64 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum      Maximum          Average         
+    --------------------------------------------------- ----------- ------------ ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        0.000000     105485355.000000 66656443.078125 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        0.000000     442826149.000000 279724491.296875
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        40810.000000 145867226.000000 92172398.281250 
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 245, Device 0, 11 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum          Maximum          Average         
+    --------------------------------------------------- ----------- ---------------- ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        85084890.000000  85091451.000000  85087474.636364 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        355741148.000000 355770011.000000 355752518.272727
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        117173126.000000 117182618.000000 117176865.272727
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 265, Device 0, 27 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum          Maximum          Average         
+    --------------------------------------------------- ----------- ---------------- ---------------- ----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        91527381.000000  128234890.000000 124533808.703704
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        382124385.000000 535952616.000000 520644522.555556
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        125864656.000000 176526042.000000 171475492.370370
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 600, Device 0, 60 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum           Maximum           Average          
+    --------------------------------------------------- ----------- ----------------- ----------------- -----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        264392129.000000  337863897.000000  293806042.250000 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        1110002135.000000 1415629175.000000 1231279426.250000
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        365677214.000000  466332866.000000  405643615.000000 
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 750, Device 0, 57 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum           Maximum           Average          
+    --------------------------------------------------- ----------- ----------------- ----------------- -----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        362887346.000000  419501710.000000  395131565.263158 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        1514840890.000000 1760673530.000000 1655641737.894737
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        499304890.000000  579926230.000000  545440516.842105 
+
+  GPU_kernel_1_1_0_0(double, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const unsigned int *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, const double *, unsigned int, const double *, double *, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, double), Block Size 256, Grid Size 1500, Device 0, 11 invocations 
+    Section: Command line profiler metrics
+    Metric Name                                         Metric Unit Minimum           Maximum           Average          
+    --------------------------------------------------- ----------- ----------------- ----------------- -----------------
+    smsp__sass_thread_inst_executed_op_dadd_pred_on.sum inst        879559976.000000  879559976.000000  879559976.000000 
+    smsp__sass_thread_inst_executed_op_dfma_pred_on.sum inst        3691629080.000000 3691629080.000000 3691629080.000000
+    smsp__sass_thread_inst_executed_op_dmul_pred_on.sum inst        1215909882.000000 1215909882.000000 1215909882.000000
+
+Note: The shown averages are calculated as the arithmetic mean of the metric values after the evaluation of the metrics for each individual kernel launch.
+If aggregating across varying launch configurations (like shared memory, cache config settings), the arithmetic mean can be misleading and looking at the individual results is recommended instead.
+This output mode is backwards compatible to the per-kernel summary output of nvprof
+==WARNING== No kernels were profiled.
+==WARNING== Profiling kernels launched by child processes requires the --target-processes all option.

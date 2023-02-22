@@ -1,0 +1,18 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Concepts or Chararcteristics}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Kernel}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{proxy applications}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Load balancing}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.4}{Prefixes for representing orders of magnitude}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.5}{Arithmetic Intensity \(AI\)}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.6}{Performance}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{DRAM Memory}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Capacity}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Bandwidth}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Latency}{section.3}% 12
+\BOOKMARK [1][-]{section.4}{Computational Loops}{}% 13
+\BOOKMARK [1][-]{section.5}{Roofline Model}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Background }{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Roofline Model }{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Examples}{}% 17
+\BOOKMARK [1][-]{lstnumber.-7.1}{Appendices}{}% 18

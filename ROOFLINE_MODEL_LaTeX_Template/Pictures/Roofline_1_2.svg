@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="joinedLines" id="id228972169">
+            <polyline points="124.54545454545455,40.0 124.54545454545455,448.88888888888886 541.0101010101009,448.88888888888886 660.0,448.88888888888886 " stroke-width="2.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0" marker-start="url(#arrow0-228972169)" marker-end="url(#arrow1-228972169)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1738062342">
+            <polyline points="124.54545454545455,448.88888888888886 420.0,120.0 660.0,120.0 660.0,120.0 " stroke-width="2.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id629231481" fill="black" latexdraw:position="bl">
+            <text x="124.54545454545456" y="500.0">Arithmetic Intensity (FLOPs/BYTEs)</text>
+        </g>
+        <g latexdraw:type="text" id="id2080773934" fill="black" latexdraw:position="bl" transform="rotate(269.54852758129454) translate(-400.2886467748992 -249.51980453823148)">
+            <text x="76.36363636363626" y="323.3333333333333">Performance [GF/s]</text>
+        </g>
+        <g latexdraw:type="text" id="id821515116" fill="black" latexdraw:position="bl">
+            <text x="398.1818181818182" y="474.44444444444446">7.11</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id832240006">
+            <polyline points="150.0,420.0 150.0,460.0 150.0,460.0 " stroke-width="2.0" stroke="black" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1105869866">
+            <polyline points="140.0,420.0 120.0,420.0 " stroke-width="2.0" stroke="black" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id767356262">
+            <polyline points="420.0,120.0 120.0,120.0 " stroke-width="2.0" stroke="black" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id557539788" fill="black" latexdraw:position="bl">
+            <text x="60.0" y="120.0">204.8</text>
+        </g>
+        <g latexdraw:type="text" id="id31279863" fill="black" latexdraw:position="bl">
+            <text x="200.0" y="100.0">$P_{peak}$</text>
+        </g>
+        <g latexdraw:type="text" id="id1520105001" fill="black" latexdraw:position="bl">
+            <text x="138.1818181818182" y="474.44444444444446">1/12</text>
+        </g>
+        <g latexdraw:type="text" id="id1778362003" fill="black" latexdraw:position="bl">
+            <text x="78.18181818181819" y="425.44">2.4</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1737752436">
+            <polyline points="420.0,120.0 420.0,440.0 420.0,440.0 " stroke-width="2.0" stroke="black" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id175539084" fill="black" latexdraw:position="bl">
+            <text x="220.0" y="300.0">BW  Limited </text>
+        </g>
+        <g latexdraw:type="text" id="id857882698" fill="black" latexdraw:position="bl">
+            <text x="440.0" y="300.0">FLOP Limited</text>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" orient="auto" id="arrow0-228972169">
+            <path d="M 0.0 0.0 L 4.652083333333334 1.6614583333333335 L 4.652083333333334 0.0 L 4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-228972169">
+            <path d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes/>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.0</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.8</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1920</latexdraw:width>
+                <latexdraw:height>1117</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>1920.0</latexdraw:x>
+                <latexdraw:y>-37.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

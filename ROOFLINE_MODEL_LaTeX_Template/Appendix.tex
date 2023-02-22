@@ -1,0 +1,196 @@
+% !TEX root = ../thesis-sample.tex
+\appendix
+\doublespacing
+%\chapter{Appendix}
+
+\section{Front-end and Back-end}
+In software engineering, the terms \verb+front-end+ and \verb+back-end+ refer to the separation
+of concerns between the presentation layer (\verb+front-end+), and the data access layer (\verb+back-end+) of a piece of software, 
+or the physical infrastructure or hardware. Therefore in a HPC, 
+\begin{itemize}
+\item The login servers are called \verb+front-ends+ because you do not run your calculations there.
+\item Rather run your calculations on \verb+back-end+ compute servers.
+\item The \verb+front-end+ server provides access to compute servers via the \verb+batch+ system, using the \verb+qsub+ command.
+\end{itemize}
+
+For example, interactive HPC entails a lot of new challenges that have to be solved one of them addressing
+the fast and efficient data transfer between a simulation \verb+back end+ and visualisation \verb+front end+,
+as several gigabytes of data per second are nothing unusual for a simulation running on some (hundred) thousand cores.
+\begin{itemize}
+\item The login on Grizzly or Badger are called \verb+front-ends+ because you do not run your calculations there.
+\item Request a node allocation using \verb+salloc+ will put you on \verb+back-end+ compute cluster, here you can run your calculations on.
+\end{itemize}
+
+\section{Hard Link or Symbolic Link}
+The \verb+ln+ command is a \verb+Linux/Unix+ command used to create file links to an existing file. 
+\subsection{Link types}
+\begin{itemize}
+\item There are two types of links
+\begin{enumerate}
+\item  \textbf{hard links:} Refer to the specific location of physical data.
+A hard link allows multiple filenames to be associated with the same file since a hard link points to the 
+inode of a given file, the data of which is stored on disk.
+\item  \textbf{symbolic links:} Refer to a symbolic path indicating the abstract location of another file.
+A symbolic links are special files that refer to other files by name.
+\end{enumerate}
+\item The \verb+ln+ command by default creates hard links, and when called with the command line parameter \verb+ln -s+
+creates symbolic links.
+\item Most operating systems prevent hard links to directories from being created since such a capability could disrupt
+the structure of a file system and interfere with the operation of other utilities. 
+\item The \verb+ln+ command can however be used to create symbolic links to  non-existent files. 
+\end{itemize}
+
+\subsection{Invoking Links} 
+There are two ways to invoking the links
+\begin{enumerate}
+\item Single file invocation
+\begin{lstlisting}[language=bash,numbers=none] 
+ln [-fs] [-L|-P] source_file target_file
+\end{lstlisting}
+\item Multiple file invocation
+\begin{lstlisting}[language=bash,numbers=none] 
+ln [-fs] [-L|-P] source_file_1 source_file_2 ...source_file_n  target_dir
+\end{lstlisting}
+\end{enumerate}
+The specification also specifies the command line options that must be supported:
+\begin{itemize}
+\item \verb+-f+ Force existing destination pathnames to be removed to allow the link.
+\item \verb+-L+ For each \verb+source_file+ operand that names a file that is a symbolic link,
+create a hard link to the file referenced by the symbolic link.
+\item \verb+-P+ For each \verb+source_file+ operand that names a file that is a symbolic link, create a (hard)
+link to the symbolic link itself.
+\item \verb+-s+ Create symbolic links instead of hard links. If the \verb+-s+ option is specified, the \verb+-L+ and \verb+-P+
+options are silently ignored.
+\item If more than one of the mutually-exclusive options \verb+-L+ and \verb+-P+ is specified the last option specified determines the
+behavior of the utility.
+\item If the \verb+-s+ option is not specified and neither a \verb+-L+ nor a \verb+-P+ option is specified, the implementation defines
+which of the \verb+-L+ and \verb+-P+ options will be used as the default.
+\end{itemize}
+
+\subsection{Examples}
+\begin{enumerate}
+ \item Example 1
+\begin{lstlisting}[language=bash,numbers=none] 
+$ ln -s source_file target_file
+\end{lstlisting}
+\begin{lstlisting}[language=bash,numbers=none] 
+$ ls -l source_file target_file
+-rw-r--r--  1 veryv  wheel  0 Mar  7 22:01 source_file
+lrwxr-xr-x  1 veryv  wheel  5 Mar  7 22:01 target_file -> source_file
+\end{lstlisting} 
+\item Example 2 - Create a symbolic link for \verb+/home/Desktop/Links/Example/example.cpp+ as \verb+/home/Test/example.cpp+,
+copy paste the following command
+\begin{lstlisting}[language=bash,numbers=none] 
+$ ln -s   /home/Desktop/Links/Example/example.cpp    /home/Test/example.cpp
+\end{lstlisting}
+\begin{lstlisting}[language=bash,numbers=none] 
+$ ll
+lrwxrwxrwx 1 vivek  vivek    16 2007-09-25 22:53 example.cpp -> /home/Desktop/Links/Example/example.cpp
+\end{lstlisting}
+\end{enumerate}
+
+\section{Securely Copy (SCP) Files}
+\verb+SCP+ allows files to be copied to, from, or between different hosts (between a local host and a remote host or between two remote hosts.).
+It uses \verb+ssh+ for data transfer and provides the same authentication and same level of security as \verb+ssh+.
+\begin{enumerate}
+ \item Copy the file \verb+foobar.txt+ from a remote host to the local host
+\begin{lstlisting}[language=bash,numbers=none] 
+$ scp your_username@remotehost.edu:foobar.txt /some/local/directory 
+\end{lstlisting}
+\item How to \verb+scp+ a file to LANL-IC \verb+turquoise/+
+\begin{lstlisting}[language=bash,numbers=none] 
+$ scp filename username@wtrw.lanl.gov:username@gr-fe.lanl.gov:/remote/path/to/file
+\end{lstlisting}
+\item Also shorter probably works
+\begin{lstlisting}[language=bash,numbers=none] 
+scp filename wtrw:gr-fe:/remote/path/to/file
+\end{lstlisting}
+\begin{lstlisting}[language=bash,numbers=none] 
+scp *.tar.gz hrmoncada@wtrw.lanl.gov:hrmoncada@gr-fe.lanl.gov:/usr/projects/climate/hrmoncada/repos/Performance
+\end{lstlisting}
+\end{enumerate}
+
+\subsection{SCP examples} 
+%https://haydenjames.io/linux-securely-copy-files-using-scp/
+\begin{itemize}
+\item Copy file from a remote host to local host SCP example:
+\begin{lstlisting}[language=bash,numbers=none] 
+$ scp username@from_host:file.txt /local/directory/
+\end{lstlisting}
+\item Copy file from local host to a remote host SCP example:
+\begin{lstlisting}[language=bash,numbers=none] 
+$ scp file.txt username@to_host:/remote/directory/
+\end{lstlisting} 
+\item Copy directory from a remote host to local host SCP example:
+\begin{lstlisting}[language=bash,numbers=none] 
+$ scp -r username@from_host:/remote/directory/  /local/directory/
+\end{lstlisting}
+\item Copy directory from local host to a remote hos SCP example:
+\begin{lstlisting}[language=bash,numbers=none] 
+$ scp -r /local/directory/ username@to_host:/remote/directory/
+\end{lstlisting} 
+\item Copy file from remote host to remote host SCP example:
+\begin{lstlisting}[language=bash,numbers=none] 
+$ scp username@from_host:/remote/directory/file.txt username@to_host:/remote/directory/
+\end{lstlisting}
+\end{itemize}
+\subsection{Notes}
+\begin{itemize}
+\item SCP example:  
+\begin{lstlisting}[language=bash,numbers=none] 
+scp -r  root@123.123.123.123:/var/www/html/ /home/hydn/backups/test/ Also see: Backup solutions.
+\end{lstlisting}
+\item Host can be IP or domain name. Once you click return, you will be prompted for SSH password.
+\item Although this page covers SCP Linux, the instructions will also work for Mac using ``Terminal''.
+You can also use WinSCP to accomplish this on a Windows PC/server.
+\item When copying a source file to a target file which already exists, scp will replace the contents of the target file. So be careful.
+\end{itemize}
+\subsection{SCP options}
+\begin{itemize}
+\item \verb+-r+ Recursively copy entire directories. Note that this follows symbolic links encountered in the tree traversal.
+\item \verb+-C+ Compression enable. Passes the \verb+-C+ flag to ssh to enable compression.
+\item \verb+-l+ limit - Limits the used bandwidth, specified in \verb+Kbit/s+.
+\item \verb+-+o \verb+ssh_option+ - Can be used to pass options to ssh in the format used in \verb+ssh_config+.
+\item \verb+-P+ port - Specifies the port to connect to on the remote host. Note that this option is written with a capital \verb+P+.
+\item \verb+-p+ Preserves modification times, access times, and modes from the original file.
+\item \verb+-q+ Quiet mode: disables the progress meter as well as warning and diagnostic messages from \verb+ssh+.
+\item \verb+-v+ Verbose mode. Print debugging messages about progress. 
+This is helpful in debugging connection, authentication, and configuration problems.
+\end{itemize}
+
+\subsection{Desktop to LANL-IC Turquoise}
+\begin{itemize}
+ \item How to \verb+scp+ a file to \verb+LANL- IC Turquoise+:
+\begin{lstlisting}[language=bash,numbers=none] 
+scp filename hrmoncada@wtrw.lanl.gov:hrmoncada@gr-fe.lanl.gov:/remote/path/to/file
+\end{lstlisting}
+example, transfer the  file \verb+testcode.tar.gz+
+\begin{lstlisting}[language=bash,numbers=none,basicstyle=\scriptsize] 
+$ scp testcode.tar.gz hrmoncada@wtrw.lanl.gov:hrmoncada@gr-fe.lanl.gov:/usr/projects/climate/hrmoncada/repos/debug_examples
+hrmoncada@wtrw.lanl.gov's password: 
+testcode.tar.gz                                                               100% 1124     1.1KB/s   00:00
+\end{lstlisting}
+example, transfer the  file \verb+example_1.tar.gz+
+\begin{lstlisting}[language=bash,numbers=none,basicstyle=\scriptsize] 
+$ scp example_1.tar.gz hrmoncada@wtrw.lanl.gov:hrmoncada@gr-fe.lanl.gov:/usr/projects/climate/hrmoncada/repos/debug_examples
+hrmoncada@wtrw.lanl.gov's password: 
+testcode.tar.gz                                                               100% 1124     1.1KB/s   00:00
+\end{lstlisting}
+\item also shorter probably works:
+\begin{lstlisting}[language=bash,numbers=none] 
+scp filename wtrw:gr-fe:/remote/path/to/file
+\end{lstlisting}
+example, transfer the  file \verb+example.tar+
+\begin{lstlisting}[language=bash,numbers=none,basicstyle=\scriptsize] 
+$ scp examples.tar wtrw:gr-fe:/usr/projects/climate/hrmoncada/repos/debug_examples
+The authenticity of host 'wtrw (204.121.65.1)' can't be established.
+RSA key fingerprint is SHA256:FssxNwJeTvPbeFHU6z/TaLvXGPfgE/RCp2LmBQzdlBs.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'wtrw' (RSA) to the list of known hosts.
+hrmoncada@wtrw's password: 
+examples.tar                                                                 100%   20KB  20.0KB/s   00:00  
+\end{lstlisting}
+
+\end{itemize}
+%\chapter{Another Appendix}
+%\lipsum[24]

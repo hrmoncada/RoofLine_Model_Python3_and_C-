@@ -1,0 +1,132 @@
+@inproceedings{Aladin_2014_Yakun_Shopia,
+    title  = {Aladdin: A Pre-RTL, Power-Performance Accelerator Simulator Enabling Large Design Space Exploration of Customized Architectures},
+    author = {Yakun Sophia Shao, Brandon Reagen, Gu-Yeon Wei and David Brooks},
+    booktitle = {International Symposium on Computer Architecture, June, 2014},
+    year = {2014},
+    howpublished = {\url{https://github.com/ysshao/ALADDIN}}
+}
+
+@electronic{developers_hpgmg,
+	title = {{HPGMG}},
+	url = {https://hpgmg.org},
+	howpublished = {\url{https://hpgmg.org}},
+	abstract = {HPGMG},
+	urldate = {2017-06-16},
+	author = {Developers, HPGMG},
+	file = {Snapshot:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/SJ8AMFJ9/hpgmg.org.html:text/html}
+}
+
+@electronic{SamVanDenteen,
+	title = {samvandensteen ({Sam} {Van} den {Steen})},
+	url = {https://github.com/samvandensteen},
+	howpublished = {\url{https://github.com/samvandensteen}},	
+	abstract = {samvandensteen has 2 repositories available. Follow their code on GitHub.},
+	urldate = {2017-06-16},
+	journal = {GitHub},
+	file = {Snapshot:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/2ZAWI72C/samvandensteen.html:text/html}
+}
+
+@electronic{pin_2_13,
+	title = {Pin: {Pin} 2.12 {User} {Guide}},
+        abstract = {Pin 2.12 {User} {Guide}},
+	url = {https://software.intel.com/sites/landingpage/pintool/docs/58423/Pin/html/index.html#EXAMPLES},
+	howpublished={\url{https://software.intel.com/sites/landingpage/pintool/docs/58423/Pin/html/index.html#EXAMPLES}},
+	urldate = {2017-06-16},
+	journal={Pin: Pin 2.12 User Guide},	
+	file = {Pin\: Pin 2.12 User Guide:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/AP4J3T7U/index.html:text/html},
+	howpublished = {\url{https://software.intel.com/sites/landingpage/pintool/docs/58423/Pin/html/index.html#EXAMPLES}}	
+}
+
+@electronic{pin_binary_instrumentation_tool,
+	title = {Pin - {A} {Dynamic} {Binary} {Instrumentation} {Tool} {\textbar} {Intel}® {Software}},
+	url = {https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool},
+	howpublished={\url{https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool}},
+	urldate = {2017-08-01},
+	note = {00000},
+	file = {Pin - A Dynamic Binary Instrumentation Tool | Intel® Software:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/ETQV5HAI/pin-a-dynamic-binary-instrumentation-tool.html:text/html}
+}
+
+@electronic{hpgmg_Berkeley_Lab,
+	title = {High {Performance} {Geometric} {Multigrid}},
+	url = {https://crd.lbl.gov/departments/computer-science/PAR/research/hpgmg/},
+	howpublished={\url{https://crd.lbl.gov/departments/computer-science/PAR/research/hpgmg/}},
+	urldate = {2017-06-22},
+	note = {2017-06-22},
+	file = {High Performance Geometric Multigrid:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/4VHRF4RB/hpgmg.html:text/html}
+}
+
+@electronic{protobuf_2017,
+	title = {protobuf: {Protocol} {Buffers} - {Google}'s data interchange format},
+	shorttitle = {protobuf},
+	url = {https://github.com/google/protobuf},
+	howpublished={\url{https://github.com/google/protobuf}},
+	urldate = {2017-07-13},
+	publisher = {Google},
+	month = {July},
+	year = {2017},
+	note = {original-date: 2014-08-26},
+	keywords = {marshalling, protobuf, protobuf-runtime, protoc, protocol-buffers, protocol-compiler, rpc, serialization},
+	file = {Snapshot:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/KM8W37BC/protobuf.html:text/html}
+}
+
+@electronic{protobuf_install/readme.md,
+	title = {protobuf/{README}.md at master · google/protobuf · {GitHub}},
+	url = {https://github.com/google/protobuf/blob/master/src/README.md},
+	howpublished= {\url{https://github.com/google/protobuf/blob/master/src/README.md}},
+	urldate = {2017-07-13},
+	note = {2017-07-13},
+	file = {protobuf/README.md at master · google/protobuf · GitHub:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/9PGJ62ME/README.html:text/html}
+}
+
+@electronic{protobuf_google,
+	title = {protobuf: {Protocol} {Buffers} - {Google}'s data interchange format},
+	shorttitle = {protobuf},
+	url = {https://github.com/google/protobuf},
+	howpublished={\url{https://github.com/google/protobuf}},
+	urldate = {2017-07-27},
+	publisher = {Google},
+	month = jul,
+	year = {2017},
+	note = {original-date: 2014-08-26T15:52:15Z},
+	file = {Snapshot:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/5EK97EVI/python.html:text/html}
+}
+@electronic{sudo_meaning,
+	title = {What {Is} the {Definition} of {Sudo} in {Linux}?},
+	url = {https://www.lifewire.com/what-is-sudo-2197466},
+	howpublished = {\url{https://www.lifewire.com/what-is-sudo-2197466}},	
+	urldate = {2017-08-01},
+	note = {2017-08-01},,
+	file = {What Is the Definition of Sudo in Linux?:/home/henry/.mozilla/firefox/u5yf6fcd.default/zotero/storage/IHNRADSN/what-is-sudo-2197466.html:text/html}
+}
+@ARTICLE{SamVanDenteen_paper,
+author={S. Van den Steen and S. Eyerman and S. De Pestel and M. Mechri and T. E. Carlson and D. Black-Schaffer and E. Hagersten and L. Eeckhout},
+journal={IEEE Transactions on Computers},
+title={Analytical Processor Performance and Power Modeling Using Micro-Architecture Independent Characteristics},
+year={2016},
+volume={65},
+number={12},
+pages={3537-3551},
+keywords={application specific integrated circuits;cache storage;circuit optimisation;computer architecture;energy conservation;integrated circuit design;microprocessor chips;performance evaluation;power aware computing;analytical processor performance;application-specific processor design;branch predictor configuration;cache configuration;design space exploration tools;energy-efficiency gain reduction;energy-efficiency improvement;microarchitecture independent profiler;optimal processor configuration determination;performance constraints;power modeling;processor optimization;superscalar out-of-order processors;technology scaling;Analytical models;Computational modeling;Estimation;Mathematical model;Out of order;Power demand;Predictive models;Modeling;micro-architecture;performance;power},
+doi={10.1109/TC.2016.2547387},
+ISSN={0018-9340},
+month={Dec},}
+
+@article{Pin_Building_Customized_Dynamic_Instrumentation,
+ author = {Luk, Chi-Keung and Cohn, Robert and Muth, Robert and Patil, Harish and Klauser, Artur and Lowney, Geoff and Wallace, Steven and Reddi, Vijay Janapa and Hazelwood, Kim},
+ title = {Pin: Building Customized Program Analysis Tools with Dynamic Instrumentation},
+ journal = {SIGPLAN Not.},
+ issue_date = {June 2005},
+ volume = {40},
+ number = {6},
+ month = jun,
+ year = {2005},
+ issn = {0362-1340},
+ pages = {190--200},
+ numpages = {11},
+ url = {http://doi.acm.org/10.1145/1064978.1065034},
+ doi = {10.1145/1064978.1065034},
+ acmid = {1065034},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {dynamic compilation, instrumentation, program analysis tools},
+} 

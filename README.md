@@ -10,11 +10,7 @@ floating-point operations performed to data movement (FLOPs/Bytes).
 # Concepts or Chararcteristics
 ## Kernel
 A kernel is a fundamental component of an software package. A software package can contain multiple kernels
-<<<<<<< HEAD
 (microkernels). A microkernel can be program of a source code, block section of source code, a layer of source code,etc.
-=======
-(microkernels). A microkernel can be program of a source code, block section of source code, a layer of source code,etc. 
->>>>>>> 61a91cf2d152a9636504cf066af863c788b9a9e0
 These microkernels deals only with critical activities in software package.
 
 In the case of operating system (OS), kernels handles many fundamental processes at a basic level, communicating

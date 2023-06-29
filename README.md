@@ -42,7 +42,12 @@ floating-point operations (FLOPs) performed by a given code (or code section) re
 amount of memory accesses (Bytes) that are required to support those operations. It is most often defined as a
 FLOPs per Bytes ratio of floating-point operations performed to data movement (FLOP/Byte). For a given kernel
 (code, or code section), we can find a point on the X-axis based on its Arithmetic intensity (AI).
-<<<<<<< HEAD
 
-=======
->>>>>>> 61a91cf2d152a9636504cf066af863c788b9a9e0
+<p align="center">
+<img
+  src="https://github.com/hrmoncada/RoofLine_Model_Python3_and_CPP/blob/main/figures/GPU_Crusher_Roofline_Model_LOG.png"
+  alt="Alt text"
+  title="Kernel "
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+</p>
+

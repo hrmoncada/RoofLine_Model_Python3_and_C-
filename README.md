@@ -10,10 +10,6 @@ floating-point operations performed to data movement (FLOPs/Bytes).
 # Concepts or Chararcteristics
 ## Kernel
 A kernel is a fundamental component of an software package. A software package can contain multiple kernels
-<<<<<<< HEAD
-=======
-
->>>>>>> 637d9a9 (figures png)
 (microkernels). A microkernel can be program of a source code, block section of source code, a layer of source code,etc.
 These microkernels deals only with critical activities in software package.
 
@@ -55,6 +51,5 @@ FLOPs per Bytes ratio of floating-point operations performed to data movement (F
   title="Kernel "
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 </p>
-=======
->>>>>>> 637d9a9 (figures png)
+
 

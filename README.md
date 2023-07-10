@@ -12,7 +12,8 @@ floating-point operations performed to data movement (FLOPs/Bytes).
   src="https://github.com/hrmoncada/RoofLine_Model_Python3_and_CPP/blob/main/figures/Roofline_0_1.png"
   alt="Alt text"
   title="Roofline Model"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 200px"
+  >
 
 # Concepts or Chararcteristics
 ## Kernel
@@ -58,7 +59,8 @@ The GPU kernels in the EXESS (Extreme-scale Electronic Structure System) standal
   src="https://github.com/hrmoncada/RoofLine_Model_Python3_and_CPP/blob/main/figures/GPU_Crusher_Roofline_Model_LOG.png"
   alt="Alt text"
   title="GAMESS Kernel"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  style="display: inline-block; margin: 0 auto; max-width: 300px"
+  >
 </p>
 
 

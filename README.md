@@ -1,4 +1,4 @@
-# RoofLine_Model_Python3_and_CPP
+# RoofLine Model
 The Roofline performance model is a tool to understand the kernel/hardware limitation.It provides a relatively
 simple way for performance estimates based on the computational kernel and hardware characteristics. It provides a
 visually-intuitive way for users to identify performance bottlenecks and motivate kernel/code optimization strategies.
@@ -6,6 +6,13 @@ The Roofline is a throughput-oriented performance model centered around the inte
 capabilities (e.g. peak GFLOP/s), memory bandwidth (e.g. STREAM GB/s), and data locality (i.e. reuse of data
 once it is loaded from memory). Data locality is commonly expressed as arithmetic intensity which is the ratio of
 floating-point operations performed to data movement (FLOPs/Bytes).
+
+<p align="center">
+<img
+  src="https://github.com/hrmoncada/RoofLine_Model_Python3_and_CPP/blob/main/figures/Roofline_0_1.png"
+  alt="Alt text"
+  title="Roofline Model"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 # Concepts or Chararcteristics
 ## Kernel
@@ -42,11 +49,15 @@ floating-point operations (FLOPs) performed by a given code (or code section) re
 amount of memory accesses (Bytes) that are required to support those operations. It is most often defined as a
 FLOPs per Bytes ratio of floating-point operations performed to data movement (FLOP/Byte). For a given kernel
 (code, or code section), we can find a point on the X-axis based on its Arithmetic intensity (AI).
+
+## Python3 and CPP Code
+The GPU kernels in the EXESS (Extreme-scale Electronic Structure System) standalone code were profiled on ORNL Crusher HPC to analyze their time and power consumption. An investigation of the multi-GPU workload on GAMESS was conducted to develop a strategy for maximizing performance while considering different power allocations. To measure performance and power on the AMD MI250X GPU, experiments were performed on the OLCF Crusher testbed system. The rocProf tool was utilized to profile the EXESS code during a Hartree-Fock calculation on the w150 input. Additionally, rocProf was employed to gather performance metrics for the most critical GPU kernels in EXESS. The rocm-smi API was used to instrument these GPU kernels and measure their average power consumption and accumulated energy usage.
+
 <p align="center">
 <img
   src="https://github.com/hrmoncada/RoofLine_Model_Python3_and_CPP/blob/main/figures/GPU_Crusher_Roofline_Model_LOG.png"
   alt="Alt text"
-  title="Kernel "
+  title="GAMESS Kernel"
   style="display: inline-block; margin: 0 auto; max-width: 300px">
 </p>
 

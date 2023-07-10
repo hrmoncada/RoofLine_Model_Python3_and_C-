@@ -41,10 +41,9 @@ def search_pattern_and_store_in_data(filename, pattern, Data):
     csv_reader = csv.reader(Store, delimiter=',')
     for row in csv_reader:
         Data.append(row)
-    #print(Data[0])
+
 # Get the number of rows and columns
     num_rows = len(Data)
-
     num_cols = len(Data[0])
 
     return [num_rows, num_cols]
@@ -57,7 +56,6 @@ def extract_metrics(filename, patterns):
     FETCH_SIZE_MOVED = []
     WRITE_SIZE_MOVED = []
 
-    #print("       KERNEL            FETCH_SIZE  WRITE_SIZE")
     for i in range(0,len(patterns)):
        Data = []
        search_pattern_and_store_in_data(filename, patterns[i], Data)
@@ -67,17 +65,11 @@ def extract_metrics(filename, patterns):
        for j in range(0,len(Data)):
           FETCH_SIZE += float(Data[j][18])
           WRITE_SIZE += float(Data[j][19])
-       #print(Data[i][18], Data[i][19])
-       #print("Bytes move  %s = (%f, %f)" %(patterns[i],FETCH_SIZE, WRITE_SIZE))
+
        BYTES = 1024*(FETCH_SIZE + WRITE_SIZE)
        BYTES_MOVED.append(BYTES)
        FETCH_SIZE_MOVED.append(FETCH_SIZE)
        WRITE_SIZE_MOVED.append(WRITE_SIZE)
-
-    #print("\nkernelname  FETCH_SIZE    WRITE_SIZE   1024*(FETCH_SIZE + WRITE_SIZE)")
-    #for i in range(0,len(BYTES_MOVED)):
-       #print("%s : %f  %f  %f"%(patterns[i], FETCH_SIZE_MOVED[i], WRITE_SIZE_MOVED[i], BYTES_MOVED[i]))
-    #print("\n")
 
     return FETCH_SIZE_MOVED, WRITE_SIZE_MOVED, BYTES_MOVED
 #----------------------------------------------------
@@ -85,22 +77,14 @@ def extract_metrics(filename, patterns):
 #----------------------------------------------------
 def extract_runtime(filename, kernelname):
     RUN_TIME = []
-    #print(" \nkernelname Calls TotalDurationNs  AverageNs")
+
     for i in range(0,len(kernelname)):
        Data = []
 # call search_pattern_and_st]ore_in_data subroutine
        search_pattern_and_store_in_data(filename, kernelname[i], Data)
-       #float(Data[i][2])
-       #float(Data[i][3])
        RUNS = int(Data[0][2])
-       #print("%s :   %s     %s    %s"%(kernelname[i], Data[0][1], Data[0][2], Data[0][3]))
 
        RUN_TIME.append(RUNS)
-
-    #print("\nkernelname  TotalDurationNs  ")
-    #for i in range(0,len(RUN_TIME)):
-       #print("%s : %f"%(kernelname[i], RUN_TIME[i]))
-    #print("\n")
 
     return RUN_TIME
 #----------------------------------------------------
@@ -113,7 +97,6 @@ def extract_FLOPS_Average(filename, kernelname, patterns):
 # For-Loop over filename and kernelname
     for k in range(0,len(filename)):
       Data_Name = 'data_set' + '.' + kernelname[k]  # data set name
-      print("data set name : %s"%(Data_Name))
 
 # Initialize array size
       num_rows = 20
@@ -123,16 +106,11 @@ def extract_FLOPS_Average(filename, kernelname, patterns):
 
 # For-Loop over label patterns (dadd, dfma, dmul)
       for i in range(0,len(patterns)):
-
          Pattern_Name = kernelname[k] + '.' + patterns[i]
-
-         #print("data patter name  : %s"%(Pattern_Name)) # patter name
-
          Data = [] # extract data table
 
 # Call "search_pattern_and_store_in_data"  subroutine
          [num_rows, num_cols] = search_pattern_and_store_in_data(filename[k], patterns[i], Data)
-         #print("(num rows, num cols) = (%d, %d)\n"%(num_rows, num_cols))
 
 # For-Loop over the rows of Data
          if  patterns[i]=="invocations" :
@@ -144,19 +122,10 @@ def extract_FLOPS_Average(filename, kernelname, patterns):
                Average[j][i] = float(Data[j][4])
 
       FLOPS = 0.0
-      print("[ Invocation |   dadd   |   dfma    |  dmul  ]")
       for line in range(0,num_rows):
-        #print(Average[line])
         FLOPS += Average[line][0]*(Average[line][1] + 2*Average[line][2] + Average[line][3])
 
-      print("%s - FLOPS = %f\n"%(kernelname[k], FLOPS))
-
       NFLOPS.append(FLOPS)
-
-    #print("\nkernelname  Num of FLOPS  ")
-    #for i in range(0,len(NFLOPS)):
-       #print("%s : %f"%(kernelname[i], NFLOPS[i]))
-    #print("\n")
 
     return NFLOPS
 
@@ -165,9 +134,9 @@ def extract_FLOPS_Average(filename, kernelname, patterns):
 #----------------------------------------------------
 if __name__ == '__main__':
 # Input files
-    filename = ['rerooineperformancemodelplot/exess.w150.0000.ncu-dpflops.out',
-                'rerooineperformancemodelplot/exess.w150.1100.ncu-dpflops.out',
-                'rerooineperformancemodelplot/exess.w150.1110.ncu-dpflops.out']
+    filename = ['../rerooineperformancemodelplot/exess.w150.0000.ncu-dpflops.out',
+                '../rerooineperformancemodelplot/exess.w150.1100.ncu-dpflops.out',
+                '../rerooineperformancemodelplot/exess.w150.1110.ncu-dpflops.out']
 # Kernels
     kernelname = ["0_0_0_0","1_1_0_0","1_1_1_0"]
 
@@ -180,29 +149,21 @@ if __name__ == '__main__':
 # Include kernel "1_0_0_0" NFLOPS
     kernelname = ["0_0_0_0","1_0_0_0","1_1_0_0","1_1_1_0"]
     NFLOPS.insert(1,2812154194667)
-
-# Print kernel name and num flops
-    print("\n| kernelname | Num of FLOPS |")
-    for i in range(0,len(NFLOPS)):
-       print("%s : %10.1f"%(kernelname[i], NFLOPS[i]))
 #-------------------------------------------------------------------------
 # Extract the data move from "metrics"
     kernelname = ["0_0_0_0","1_0_0_0","1_1_0_0","1_1_1_0"]
 
-    filename = "rerooineperformancemodelplot/metrics.csv"
+    filename = "../rerooineperformancemodelplot/metrics.csv"
     FETCH_SIZE_MOVED,  WRITE_SIZE_MOVED, BYTES_MOVED =  extract_metrics(filename, kernelname)
-
-    print("\n| kernelname | FETCH_SIZE  |  WRITE_SIZE |  1024*(FETCH_SIZE + WRITE_SIZE) |")
-    for i in range(0,len(BYTES_MOVED)):
-       print("%s :    %f  %f    %10.1f"%(kernelname[i], FETCH_SIZE_MOVED[i], WRITE_SIZE_MOVED[i], BYTES_MOVED[i]))
 #-------------------------------------------------------------------------
 #  Extract the execution time from "resulta.stat"
-    filename = "rerooineperformancemodelplot/results.stats.csv"
+    filename = "../rerooineperformancemodelplot/results.stats.csv"
     RUN_TIME = extract_runtime(filename, kernelname)
+#-------------------------------------------------------------------------
+    print("| kernelname | Num of FLOPS |FETCH_SIZE  |  WRITE_SIZE |  1024*(FETCH_SIZE + WRITE_SIZE) | RUN TIME |")
+    for i in range(0,len(BYTES_MOVED)):
+       print("%s :  %10.1f  %f  %f       %10.1f            %10.1f"%(kernelname[i], NFLOPS[i], FETCH_SIZE_MOVED[i], WRITE_SIZE_MOVED[i], BYTES_MOVED[i], RUN_TIME[i]))
 
-    print("\n| kernelname | Num of FLOPS| ")
-    for i in range(0,len(RUN_TIME)):
-       print("%s :  %10.1f"%(kernelname[i], RUN_TIME[i]))
 #-------------------------------------------------------------------------
 # Plotting - The Roofline Model
 # x-axis - Computational Intensity or Aritmetic_Intensity [FLOP/Bytes]
@@ -226,9 +187,6 @@ TERA = 10**12
 # Nano seconds 10^-9
 ns = 10**(-9)
 
-colors = np.array(['red', 'blue', 'green','magenta'])
-markers = np.array(['o', 's', 'd', 'v'])
-
 # P_max : Peak Performance [TFLOP/s]
 peak_limited_by_execution = 26.5*TERA
 print("\nP_peak : Peak Performance = %.2E\n"%(float(peak_limited_by_execution)))
@@ -244,20 +202,27 @@ print("Aritmetic_Intensity = ",Aritmetic_Intensity)
 # y-axis Attainable Peak Performance [TFLOP/s] = [NFLOPS]/ [RUN_TIME x ns]
 RUN_TIME_ns  = [i * ns for i in RUN_TIME]
 Attainable_Peak_performance = [i / j for i, j in zip(NFLOPS, RUN_TIME_ns)]
-print("Attainable Peak Performance = ",Attainable_Peak_performance)
+print("\nAttainable Peak Performance = ",Attainable_Peak_performance)
 
-# Knee point :(x, y) = (x_AI, P_max)
+# Knee point (x, y) = (x_AI, P_max)
 # Peak_performance =  Bandwidth x Arithmetic Intensity
 # Aritmetic_Intensity = Peak_performance / Bandwidth = [TFLOP/s]/[TBytes/s] = [FLOP/Bytes]
 x_AI = peak_limited_by_execution/peak_limited_by_data_transfer
 print("\nknee point (x_AI, P_peak) = (%5.2f, %.2E)\n"%(float(x_AI), float(peak_limited_by_execution)))
-#-------------------------------------------------------------------------
 
+#-------------------------------------------------------------------------
+# Plotting
+#-------------------------------------------------------------------------
+colors = np.array(['red', 'blue', 'green','magenta'])
+markers = np.array(['o', 's', 'd', 'v'])
+
+#-------------------------------------------------------------------------
+# Regular Plotting
+#-------------------------------------------------------------------------
 fig1 = plt.figure(1)
 
 plt.plot(x_AI, peak_limited_by_execution, 'ko', markersize=12)
 plt.text(-2, peak_limited_by_execution*1.03,'(x_AI, P_peak)' ,rotation=0, fontsize=20)
-#plt.text(x_AI-5,-1000,'x_AI' ,rotation=0, fontsize=20)
 
 # Upper bound, horizontal line
 plt.hlines(peak_limited_by_execution, xmin=x_AI, xmax=300, linewidth=2, color='r', linestyle='-')
@@ -271,9 +236,8 @@ plt.hlines(peak_limited_by_execution, xmin=0, xmax=x_AI, color='r', linestyle="d
 # Slope Memory Bandwidth - y = mx + b
 x = np.linspace(0, x_AI,10)
 y = peak_limited_by_data_transfer*x
-#plt.axline((0, 4), slope=3., color='C0', label='by slope')
-plt.plot(x, y, '-r')
 
+plt.plot(x, y, '-r')
 plt.text(-2.5, peak_limited_by_data_transfer*7,'Bandwidth (TByte/s)',rotation=85, fontsize=20)
 
 # Plot over the Kernel points
@@ -284,23 +248,24 @@ for i in range(len(colors)):
 plt.xlim(-1, 300)
 plt.ylim(-1, 1.1*peak_limited_by_execution)
 
-# after plotting the data, format the labels
-#current_values = plt.gca().get_yticks()
-#plt.gca().set_yticklabels(['{:,.0f}'.format(x) for x in current_values]) # No decimal places
-
 plt.xlabel('Arithmetic Intensity [flop/byte]', fontsize=18)
 plt.ylabel('Attainable Performance [TFLOPS]', fontsize=18)
 plt.title('MI250X GPU on Crusher\n'+ '(Peak Performance 26.5  [TFLOP/s], Bandwidth 1.6 [TByte/s])', fontsize=20)
 plt.grid(color='r', linestyle="dotted", linewidth=.5)
 plt.legend(loc=4, bbox_to_anchor=(0.95,0.5), title='Kernels', title_fontsize=20, fontsize=20)
 
-#-------------------------------------------------------------------------
 
+# Additional information on the plot
+plt.axhline(peak_limited_by_execution, color="green", linestyle="--", label="Peak Performance")
+plt.plot(x, y, color="orange", linestyle="--", label="Bandwidth")
+plt.legend()
+#-------------------------------------------------------------------------
+# Log-Log Plotting
+#-------------------------------------------------------------------------
 fig2 = plt.figure(2)
 
 plt.plot(x_AI, peak_limited_by_execution, 'ko', markersize=12)
 plt.text(-2, peak_limited_by_execution*1.03,'(x_AI, P_peak)' ,rotation=0, fontsize=20)
-#plt.text(x_AI-5,-1000,'x_AI' ,rotation=0, fontsize=20)
 
 # Upper bound, horizontal line
 plt.hlines(peak_limited_by_execution, xmin=x_AI, xmax=500, linewidth=2, color='r', linestyle='-')
@@ -314,23 +279,16 @@ plt.hlines(peak_limited_by_execution, xmin=0, xmax=x_AI, color='r', linestyle="d
 # Slope Memory Bandwidth - y = mx + b
 x = np.linspace(0, x_AI,10)
 y = peak_limited_by_data_transfer*x
-#plt.axline((0, 4), slope=3., color='C0', label='by slope')
 plt.plot(x, y, '-r')
 
 plt.text(3.2, peak_limited_by_data_transfer*4,'Bandwidth (TByte/s)',rotation=43, fontsize=20)
 
 # Plot over the Kernel points
 for i in range(len(colors)):
-    #plt.scatter(Aritmetic_Intensity[i], Attainable_Peak_performance[i], marker=markers[i], s = 100, c=colors[i],label=kernelname[i])
-    #plt.plot(Aritmetic_Intensity[i], Attainable_Peak_performance[i], marker=markers[i], linestyle='', markersize=12, color=colors[i],label=kernelname[i])
     plt.loglog(Aritmetic_Intensity[i], Attainable_Peak_performance[i], marker=markers[i], linestyle='', markersize=12, color=colors[i],label=kernelname[i])
 
 plt.xlim(-1, 500)
 plt.ylim(-1, 1.2*peak_limited_by_execution)
-
-# after plotting the data, format the labels
-#current_values = plt.gca().get_yticks()
-#plt.gca().set_yticklabels(['{:,.0f}'.format(x) for x in current_values]) # No decimal places
 
 plt.xlabel('Arithmetic Intensity [flop/byte]', fontsize=18)
 plt.ylabel('Attainable Performance [FLOP/s]', fontsize=18)
@@ -341,10 +299,16 @@ plt.yticks([10**12,  10**13, 10**14])
 #plt.yticks(np.arange(10**12, 10**14, 10**9))
 
 plt.legend(loc=4, bbox_to_anchor=(0.99,0.715), title='Kernels', title_fontsize=20, fontsize=20)
+
+# Additional information on the plot
+plt.axhline(peak_limited_by_execution, color="green", linestyle="--", label="Peak Performance")
+plt.plot(x, y, color="orange", linestyle="--", label="Bandwidth")
+plt.legend()
 #-------------------------------------------------------------------------
+# plots are save on figures/
 plt.show()
-fig1.savefig('GPU_Crusher_Roofline_Model.pdf')
-fig2.savefig('GPU_Crusher_Roofline_Model_LOG.pdf')
+fig1.savefig('figures/GPU_Crusher_Roofline_Model.pdf')
+fig2.savefig('figures/GPU_Crusher_Roofline_Model_LOG.pdf')
 
 
 

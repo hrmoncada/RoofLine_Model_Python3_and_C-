@@ -12,7 +12,6 @@
 \contentsline {subsection}{\numberline {3.3}Latency}{3}{subsection.3.3}%
 \contentsline {section}{\numberline {4}Computational Loops}{3}{section.4}%
 \contentsline {section}{\numberline {5}Roofline Model}{4}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Background }{4}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Roofline Model }{4}{subsection.5.2}%
-\contentsline {section}{\numberline {6}Examples}{6}{section.6}%
-\contentsline {section}{Appendices}{10}{lstnumber.-7.1}%
+\contentsline {subsection}{\numberline {5.1}Roofline Model }{5}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Examples}{7}{section.6}%
+\contentsline {section}{Appendices}{11}{lstnumber.-7.1}%

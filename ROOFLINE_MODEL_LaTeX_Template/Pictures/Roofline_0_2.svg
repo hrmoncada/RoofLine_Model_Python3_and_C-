@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:latexdraw="http://latexdraw.sourceforge.net/namespaces/latexdraw" version="1.1" baseProfile="full">
+    <g>
+        <g latexdraw:type="text" id="id426563659" fill="black" latexdraw:position="bl">
+            <text x="244.54545454545456" y="500.0">Arithmetic Intensity (FLOPs/BYTEs)</text>
+        </g>
+        <g latexdraw:type="akinPoints" id="id180814490" latexdraw:pathType="CURVES" latexdraw:interval="5" latexdraw:points="300.0 200.0 320.0 220.0 ">
+            <path d="M 300.0 200.0 " stroke-width="2.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1962775456">
+            <polyline points="124.54545454545455,40.0 124.54545454545455,448.88888888888886 541.0101010101009,448.88888888888886 660.0,448.88888888888886 " stroke-width="2.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0" marker-start="url(#arrow0-1962775456)" marker-end="url(#arrow1-1962775456)"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1268782541">
+            <polyline points="124.54545454545462,448.88888888888886 420.0,119.99999999999994 659.9999999999997,119.99999999999994 659.9999999999997,119.99999999999994 " stroke-width="3.0" stroke="black" fill="none" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1996096472" fill="black" latexdraw:position="bl" transform="rotate(269.54852758129454) translate(-448.3757558414447 -275.41012146708977)">
+            <text x="87.56363636363625" y="360.13333333333304">Performance [GF/s]</text>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1035955895">
+            <polyline points="420.8,121.6 125.59999999999995,120.80000000000004 " stroke-width="2.0" stroke="black" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="joinedLines" id="id1645376767">
+            <polyline points="420.0,120.83333333333333 420.0,440.8333333333333 420.0,440.8333333333333 " stroke-width="2.0" stroke="black" fill="none" stroke-dasharray="8.819444444444445, 5.291666666666667" latexdraw:rotationAngle="0.0"/>
+        </g>
+        <g latexdraw:type="text" id="id1700175454" fill="black" latexdraw:position="bl">
+            <text x="65.00000000000009" y="124.16666666666657">$P_{peak}$</text>
+        </g>
+        <g latexdraw:type="dot" id="id1922770567" latexdraw:size="20.0" latexdraw:dotShape="*" latexdraw:position="420.0 120.0">
+            <path d="M 429.2307692307692 120.0 C 429.2307692307692 125.09801307536117 425.09801307536117 129.23076923076923 420.0 129.23076923076923 C 414.90198692463883 129.23076923076923 410.7692307692308 125.09801307536117 410.7692307692308 120.0 C 410.7692307692308 114.90198692463883 414.90198692463883 110.76923076923077 420.0 110.76923076923077 C 425.09801307536117 110.76923076923077 429.2307692307692 114.90198692463883 429.2307692307692 120.0 z " fill="#e61919" stroke-linecap="square" stroke-linejoin="butt" stroke-width="1.25" stroke-miterlimit="10.0" stroke-dashoffset="0.0" stroke="#e61919"/>
+        </g>
+        <g latexdraw:type="text" id="id167792320" fill="#d11919" latexdraw:position="bl">
+            <text x="440.0" y="200.0">knee point</text>
+        </g>
+        <g latexdraw:type="text" id="id1990370050" fill="black" latexdraw:position="bl" transform="rotate(-50.20441694931738) translate(-320.232308177591 64.35418572509423)">
+            <text x="228.80000000000024" y="309.59999999999945">Bandwidth</text>
+        </g>
+        <g latexdraw:type="bezierCurve" id="id90376488">
+            <path d="M 460.0 200.0 C 460.0 240.0 420.0 180.0 420.0 140.0 " stroke-width="3.0" stroke="#ca1414" fill="none" latexdraw:rotationAngle="0.0" marker-end="url(#arrow1-90376488)"/>
+        </g>
+        <g latexdraw:type="drawing" id="id1542146005">
+            <g latexdraw:type="text" id="id1717352988" fill="black" latexdraw:position="bl">
+                <text x="440.0" y="320.0">FLOP Limited</text>
+            </g>
+            <g latexdraw:type="rectangle" id="id856463776">
+                <rect x="431.0" y="301.0" width="142.0" height="30.0" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="none"/>
+            </g>
+        </g>
+        <g latexdraw:type="drawing" id="id1989180841">
+            <g latexdraw:type="text" id="id1218392493" fill="black" latexdraw:position="bl">
+                <text x="272.0" y="319.4652777777777">BW  Limited </text>
+            </g>
+            <g latexdraw:type="rectangle" id="id1220248418">
+                <rect x="263.0" y="298.99999999999994" width="126.0" height="33.125" latexdraw:borderPos="outer" stroke-width="2.0" stroke="black" fill="none"/>
+            </g>
+        </g>
+        <g latexdraw:type="text" id="id1209881049" fill="black" latexdraw:position="bl">
+            <text x="405.0000000000001" y="464.1666666666666">$x_{peak}$</text>
+        </g>
+    </g>
+    <defs>
+        <marker overflow="visible" orient="auto" id="arrow0-1962775456">
+            <path d="M 0.0 0.0 L 4.652083333333334 1.6614583333333335 L 4.652083333333334 0.0 L 4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-1962775456">
+            <path d="M 0.0 0.0 L -4.652083333333334 1.6614583333333335 L -4.652083333333334 0.0 L -4.652083333333334 -1.6614583333333335 z " latexdraw:arrSizeNum="2.0" fill="black"/>
+        </marker>
+        <marker overflow="visible" orient="auto" id="arrow1-90376488">
+            <path d="M 0.0 0.0 L -4.034722222222222 1.4409722222222223 L -4.034722222222222 0.0 L -4.034722222222222 -1.4409722222222223 z " latexdraw:arrSizeNum="2.0" fill="#ca1414"/>
+        </marker>
+    </defs>
+    <metadata>
+        <latexdraw:metadata>
+            <latexdraw:latexIncludes/>
+            <latexdraw:displayXScale>true</latexdraw:displayXScale>
+            <latexdraw:displayYScale>true</latexdraw:displayYScale>
+            <latexdraw:unit>CM</latexdraw:unit>
+            <latexdraw:zoom>1.2</latexdraw:zoom>
+            <latexdraw:magneticGridStyle>CUSTOMISED</latexdraw:magneticGridStyle>
+            <latexdraw:gridGap>20</latexdraw:gridGap>
+            <latexdraw:magneticGrid>true</latexdraw:magneticGrid>
+            <latexdraw:version>3.3.8</latexdraw:version>
+            <latexdraw:size>
+                <latexdraw:width>1846</latexdraw:width>
+                <latexdraw:height>1053</latexdraw:height>
+            </latexdraw:size>
+            <latexdraw:position>
+                <latexdraw:x>1674.0</latexdraw:x>
+                <latexdraw:y>27.0</latexdraw:y>
+            </latexdraw:position>
+        </latexdraw:metadata>
+    </metadata>
+</svg>

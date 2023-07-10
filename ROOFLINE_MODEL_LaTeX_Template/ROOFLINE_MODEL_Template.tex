@@ -321,32 +321,47 @@ for (i = 0; i \textless N; ++i)\{\\ \;\;\;c{[}i{]} = buffer{[}i{]}+d{[}i{]};\\  
 % Within ECP, application teams, co-design centers, software technology projects and vendors all plan to use proxy apps as a major mechanism to drive collaborations and co-design solutions for exascale challenges.
 
 \section{Roofline Model}
-\subsection{Background }
+%\subsection{Background }
+\begin{figure}[!htp]
+    \centering
+    \includegraphics[width=.4\textwidth, height=.3\textwidth]{Roofline_0_2.pdf}
+    \caption{Roofline model - Principal Components to Performance}
+    \label{Roofline_4}
+\end{figure}
 \begin{itemize}
- \item x-axis - Computational Intensity or Aritmetic Intensity $[FLOP/Bytes]$
- \item y-axis - Attainable Peak Performance $[GFLOP/s] = [(FLOP\times10^9)/s]$
- \item m slope - Bandwidth $[GFLOP/s]/FLOP/Bytes]] = [GBytes/s]$
- \item $y =  mx + b$, where $b = 0$,
- \begin{equation*}
+\item \verb+x-axis+ : Computational Intensity or Aritmetic Intensity  \[\left[\frac{FLOP}{Bytes}\right]\]
+\item \verb+y-axis+ : Attainable Peak Performance \[ \left[\frac{GFLOP}{s}\right] = \left[\frac{FLOP \times 10^9}{s}\right] \]
+\item \verb+m+ slope : Bandwidth \[ \displaystyle \frac{\left[\frac{GFLOP}{s}\right] } { \left[\frac{FLOP}{Bytes} \right] } = \left[ \frac{GBytes}{s}\right] \]
+\item \verb+b+  y-axis interception
+\item $y =  mx + b$
+\begin{equation*}
 \mbox{Attainable Peak Performance} =  \mbox{Bandwidth} \times \mbox{Computational Intensity} + b
- \end{equation*}
-$b = 0$, Since Attainable Peak Performance is equal zero when Computational Intensity is equal to zero  
+\end{equation*}
+Since \verb+Attainable Peak Performance+ is equal zero when \verb+Computational Intensity+ is equal to zerow  ($b = 0$),
+\begin{equation*}
+\mbox{Attainable Peak Performance} =  \mbox{Bandwidth} \times \mbox{Computational Intensity}
+\end{equation*}
+
 \item Knee point: It is interception between the Computational Intensity and Bandwidth $(y = mx \Rightarrow x = y/m)$
  \begin{eqnarray*}
-y_{\mbox{Attainable Peak Performance}} & = &  m_{\mbox{Bandwidth}} \cdot y_{\mbox{Computational Intensity}}\\
-x_{\mbox{Computational Intensity}} & = &\frac{y_{\mbox{Attainable Peak Performance}}}{m_{\mbox{Bandwidth}}} \cdot \frac{(GFLOP/s)}{(GBytes/s)}
- \end{eqnarray*}
- \item BandWidth slope line can be build an array(x, y) 
+y_{\mbox{Attainable Peak Performance}} & = &  m_{\mbox{Bandwidth}} \cdot x_{\mbox{Computational Intensity}}\\
+x_{\mbox{Computational Intensity}} & = &\frac{y_{\mbox{Attainable Peak Performance}}}{m_{\mbox{Bandwidth}}} \cdot \frac{\left[\frac{GFLOP}{s}\right]}{\left[\frac{GBytes}{s}\right]}\\
+& = &\frac{y_{\mbox{Attainable Peak Performance}}}{m_{\mbox{Bandwidth}}} \cdot \left[\frac{FLOP}{Bytes}\right]
+\end{eqnarray*}
+\item Bandwidth slope line can be build as an $ array(x, y)$
 \begin{eqnarray*}
-x & = &  0 : x_{\mbox{Computational Intensity}} \\
-y & = & m_{\mbox{Bandwidth}} \@\cdot \@x  
+\vec{x} & = &  0 : x_{\mbox{Computational Intensity}}
+\end{eqnarray*}
+\begin{eqnarray*}
+\vec{y} & = & m_{\mbox{Bandwidth}}  \cdot  \vec{x}
 \end{eqnarray*}
 \end{itemize}
+
 \subsection{Roofline Model }
 The Roofline model characterizes a kernel’s performance in GigaFLOPs per second \verb+(GFLOP/s)+ as a function of its Arithmetic Intensity (AI) a ratio of floating-point operations performed to data movement \verb+(FLOP/Byte)+, as described as Equation \ref{Roofline_eq_2}
 \begin{figure}[!htp]
     \centering
-    \includegraphics[width=.4\textwidth, height=.3\textwidth]{Roofline_0.png}
+    \includegraphics[width=.4\textwidth, height=.3\textwidth]{Roofline_0.pdf}
     \caption{Roofline Performance Model}
     \label{Roofline_0}
 \end{figure}
@@ -362,7 +377,7 @@ The Roofline model characterizes a kernel’s performance in GigaFLOPs per secon
 \begin{table}[!htp]
 \centering
 \renewcommand{\arraystretch}{2}
-\begin{tabular}{|llc|}\hline
+\begin{tabular}{|l|l|c|}\hline
 Maximum processing capability & Peak performance & $P_{peak} \left[\frac{FLOPs}{s} \right]$ \\ \hline\hline
 Rate of revolving door & Memory bandwidth & $b_S\left [\frac{Bytes}{s} \right]$\\ \hline\hline
 \multirow{2}{*}{Workload per customer} & \multirow{2}{*}{\begin{tabular}[c]{@{}l@{}}Arithmetic Intensity (AI)\\ or Computational Intensity\end{tabular}} & \multirow{2}{*}{$I \left[\frac{FLOPs}{s} \right]$} \\ 
@@ -400,18 +415,24 @@ Performance can be estimated from hardware and kernel characteristics
     \caption{Roofline model - Performance Upper Bounded}
     \label{Roofline_0_1}
 \end{figure}
- The Roofline Model – refined
+ The Roofline Model - refined
 \begin{itemize}
-\item $P_{max} = \mbox{Applicable peak performance of a loop}$, assuming that data comes from the level 1 cache (this is not necessarily $P_{peak}$), $P_{max} = 176$ GFlop/s.
-\item $I = \mbox{Computational intensity}$ (work per byte transferred) over the slowest data path utilized (code balance $B_C = I^{-1}$ ), $I = 0.167$ Flop/Byte, $B_C = 6$ Byte/Flop.
-\item $b_S = \mbox{Applicable (saturated) peak bandwidth}$ of the slowest data path utilized, $b_S = 56$ GByte/s.
+\item $P_{max} = \mbox{Applicable peak performance of a loop}$, assuming that data comes from the level 1 cache (this is not necessarily $P_{peak}$)
+\item $I = \mbox{Computational intensity}$ (work per byte transferred) over the slowest data path utilized (code balance $B_C = I^{-1}$ )
+\item $b_S = \mbox{Applicable (saturated) peak bandwidth}$ of the slowest data path utilized
 \end{itemize}
 Expected performance:
 \begin{equation*}
  P = \min \left(P_{max} , I \cdot b_S\right) = \min \left(P_{max}, \frac{b_S}{B_C}\right)
 \end{equation*}
-% [Byte/s]
-% [Byte/Flop]
+\begin{eqnarray*}
+P_{max} & = & 176 \frac{GFlop}{s}\\
+I   & = & 0.167 \frac{Flop}{Byte}\\
+B_C & = & \frac{1}{I} = 5.99 \frac{Byte}{Flop}\\
+b_S & = & 56 \frac{GByte}{s}\\
+ P & = & \min \left(176 \frac{GFlop}{s} , 0.167 \frac{Flop}{Byte} \cdot 56 \frac{GByte}{s}\right) = \min \left(176 \frac{GFlop}{s}, \frac{56 \frac{GByte}{s}}{5.99 \frac{Byte}{Flop}}\right) = 9.35 \frac{GFlop}{s}
+\end{eqnarray*}
+
 
 \section{Examples}
 \begin{enumerate}

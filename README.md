@@ -9,10 +9,10 @@ floating-point operations performed to data movement (FLOPs/Bytes).
 
 <p align="center">
 <img
-  src="https://github.com/hrmoncada/RoofLine_Model_Python3_and_CPP/blob/main/figures/Roofline_0_1.png"
+  src="https://github.com/hrmoncada/RoofLine_Model_Python3_and_CPP/blob/main/figures/Roofline_0_1.png" width="60%" height="30%"
   alt="Alt text"
   title="Roofline Model"
-  style="display: inline-block; margin: 0 auto; max-width: 200px"
+  style="display: inline-block; margin: 0 auto; max-width: 300px"
   >
 
 # Concepts or Chararcteristics
